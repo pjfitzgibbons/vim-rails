@@ -1,3 +1,6 @@
-/rails.zip
-/rails.vba
-/doc/tags
+rails.zip
+rails.vba
+doc/tags*
+backups
+.netrwhist
+tmp
