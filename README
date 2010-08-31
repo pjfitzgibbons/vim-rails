@@ -1,5 +1,43 @@
 rails.vim
 
+== Ruby-enabled VIM for Mac OSX Snow Leopard (10.6 +) ==
+
+This vim configuration requires a ruby-enabled VIM, to support the CommandT plugin.
+
+You can get a well-honed and fully-enabled VIM from :
+
+http://github.com/b4winckler/macvim/downloads
+
+Follow Björn Winckler's Installation instructions for best results.
+
+=== Link MacVim into 'vim' command line ==
+
+The 'mvim' command within Björn's repo is a self-recognizing bash script.
+
+When named 'mvim','gvim', etc, it will launch the MacVim GUI.
+When named 'vim', it will launch text-mode VIM in the terminal.
+
+You may link/copy the 'mvim' into whatever locations may be convenient for you.
+
+Make sure to 'vim --version' and check that your $PATH is catching the right VIM.
+
+
+== Installation ==
+You are welcome do install this any number of ways.  Here is a recommendation :
+
+Move or Re-move your existing ~/.vim and ~/.vimrc
+
+Clone this Git repo into a convenient location (say, ~/vim-rails) :
+
+  cd ~
+  git clone git@github.com:pjfitzgibbons/vim-rails.git
+
+Link the repo into the expected locations for VIM :
+
+  ln -s ~/vim-rails ~/.vim
+  ln -s ~/vim-rails/.vimrc ~/.vimrc
+
+
 To install, simply copy autoload/rails.vim, plugin/rails.vim, and
 doc/rails.txt to the appropriate directories in ~/.vim.  Alternatively,
 `rake install` may be used.
